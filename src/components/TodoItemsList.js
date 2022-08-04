@@ -13,7 +13,7 @@ class TodoItemList extends Component {
                 checked={checked}
                 // {...todo} 와 같음
                 onToggle={onToggle}
-                onReMove={onRemove}
+                onRemove={onRemove}
                 key={id}
                 />
             )
