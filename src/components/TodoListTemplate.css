@@ -1,6 +1,7 @@
 .todo-list-template {
-    background-color: white;
+    background-color: #e7f5ff;
     width: 512px;
+    border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     margin: 0 auto;
     margin-top: 4rem;
@@ -8,16 +9,17 @@
 
 .title {
     padding: 2rem;
+    border-radius: 10px;
     font-size: 2.5rem;
     text-align: center;
-    font-weight: 100;
-    background: #22b8cf;
+    font-weight: 500;
+    background: #a5d8ff;
     color: white;
 }
 
 .form-wrapper {
     padding: 1rem;
-    border-bottom: 1px solid #22b8cf;
+    border-bottom: 3px solid #a5d8ff;
 }
 
 .todos-wrapper {
