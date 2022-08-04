@@ -3,12 +3,24 @@ import TodoItem from './TodoItem'
 
 class TodoItemList extends Component {
     render() {
-        const { todos, onToggle, onMove } = this.props;
+        const { todos, onToggle, onRemove } = this.props;
+
+        const todoList = todos.map(
+            ({id, text, checked}) => (
+                <TodoItem
+                id={id}
+                text={text}
+                checked={checked}
+                // {...todo} 와 같음
+                onToggle={onToggle}
+                onReMove={onRemove}
+                key={id}
+                />
+            )
+        )
         return (
             <div>
-                <TodoItem text="안녕" />
-                <TodoItem text="리액트" />
-                <TodoItem text="반가워" />
+                {todoList}
             </div>
         );
     }
